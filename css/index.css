@@ -205,11 +205,77 @@ header {
   justify-content: space-between;
   -webkit-align-items: center;
   align-items: center;
+  font-size: 0.48rem;
+}
+
+header span:first-child {
+  margin-left: 0.4rem;
+}
+
+header span:last-child {
+  margin-right: 0.4rem;
+}
+
+header span:last-child img {
+  width: 2.13333rem;
 }
 
 section {
   width: 100%;
   flex: 1;
+}
+
+section .inp {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .inp input {
+  width: 100%;
+  border: solid 1px #ccc;
+  border-radius: 0.4rem;
+  padding-left: 0.4rem;
+}
+
+section .conter {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  flex-wrap: wrap;
+}
+
+section .conter dl {
+  width: 20%;
+  height: 1.73333rem;
+  text-align: center;
+  margin-top: 0.13333rem;
+}
+
+section .conter dl dd img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+section .conter dl dt {
+  color: #ccc;
+  padding-top: 0.13333rem;
+}
+
+section .main {
+  width: 100%;
+  height: 8rem;
+}
+
+section .main img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
