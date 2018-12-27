@@ -28,6 +28,7 @@ header {
 section {
     width: 100%;
     flex: 1;
+    overflow: auto;
     .inp {
         width: 100%;
         height: pxTorem(30px);

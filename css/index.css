@@ -223,6 +223,7 @@ header span:last-child img {
 section {
   width: 100%;
   flex: 1;
+  overflow: auto;
 }
 
 section .inp {
