@@ -13,11 +13,54 @@ header {
     @include box_flex;
     @include justify(space-between);
     @include align;
+    font-size: pxTorem(18px);
+    span:first-child {
+        margin-left: pxTorem(15px);
+    }
+    span:last-child {
+        img {
+            width: pxTorem(80px);
+        }
+        margin-right: pxTorem(15px);
+    }
 }
 
 section {
     width: 100%;
     flex: 1;
+    .inp {
+        width: 100%;
+        height: pxTorem(30px);
+        @include box_flex;
+        input {
+            width: 100%;
+            border: solid 1px #ccc;
+            border-radius: pxTorem(15px);
+            padding-left: pxTorem(15px)
+        }
+    }
+    .conter {
+        width: 100%;
+        height: pxTorem(150px);
+        @include box_flex;
+        flex-wrap: wrap;
+        dl {
+            width: 20%;
+            height: pxTorem(65px);
+            text-align: center;
+            margin-top: pxTorem(5px);
+            dd {
+                img {
+                    width: pxTorem(45px);
+                    height: pxTorem(45px);
+                }
+            }
+            dt {
+                color: #ccc;
+                padding-top: pxTorem(5px);
+            }
+        }
+    }
 }
 
 footer {
