@@ -26,4 +26,18 @@ footer {
     @include box_flex;
     @include justify(space-around);
     @include align;
+    border-top: 1px solid #ccc;
+    padding-top: pxTorem(5px);
+    box-sizing: border-box;
+    dl {
+        dt {
+            text-align: center;
+            img {
+                width: pxTorem(20px);
+            }
+        }
+        dd {
+            font-size: pxTorem(14px);
+        }
+    }
 }
